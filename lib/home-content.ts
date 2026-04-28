@@ -22,7 +22,6 @@ export type LearningModuleCard = Module & {
 export type DocumentationCard = DocumentationItem & {
   accent: "gold" | "navy" | "cream";
   slot: string;
-  helper: string;
 };
 
 export type ModuleDocument = {
@@ -260,7 +259,7 @@ export const DOCUMENTATION_ITEMS: DocumentationCard[] = [
     event: "Dokumentasi",
     accent: "navy",
     slot: "Foto 01",
-    helper: "Rasio aman: 4:5 atau 16:10. Cocok untuk foto suasana kelas.",
+    // Rasio aman: 4:5 atau 16:10. Cocok untuk foto suasana kelas.
   },
   {
     id: "doc-photo-2",
@@ -273,7 +272,7 @@ export const DOCUMENTATION_ITEMS: DocumentationCard[] = [
     event: "Dokumentasi",
     accent: "gold",
     slot: "Foto 02",
-    helper: "Pilih foto terang dengan fokus jelas pada aktivitas utama.",
+    // Pilih foto terang dengan fokus jelas pada aktivitas utama.
   },
   {
     id: "doc-photo-3",
@@ -286,7 +285,7 @@ export const DOCUMENTATION_ITEMS: DocumentationCard[] = [
     event: "Dokumentasi",
     accent: "cream",
     slot: "Foto 03",
-    helper: "Cocok untuk momen yang menunjukkan kolaborasi dan partisipasi siswa.",
+    // Cocok untuk momen yang menunjukkan kolaborasi dan partisipasi siswa.
   },
   {
     id: "doc-photo-4",
@@ -299,7 +298,7 @@ export const DOCUMENTATION_ITEMS: DocumentationCard[] = [
     event: "Dokumentasi",
     accent: "navy",
     slot: "Foto 04",
-    helper: "Gunakan foto horizontal jika ingin menampilkan lebih banyak peserta.",
+    // Gunakan foto horizontal jika ingin menampilkan lebih banyak peserta.
   },
   {
     id: "doc-video-1",
@@ -312,7 +311,7 @@ export const DOCUMENTATION_ITEMS: DocumentationCard[] = [
     event: "Dokumentasi",
     accent: "cream",
     slot: "Video 01",
-    helper: "Simpan video utama kegiatan atau thumbnail pendukung di path ini.",
+    // Simpan video utama kegiatan atau thumbnail pendukung di path ini.
   },
   {
     id: "doc-video-2",
@@ -325,7 +324,7 @@ export const DOCUMENTATION_ITEMS: DocumentationCard[] = [
     event: "Dokumentasi",
     accent: "gold",
     slot: "Video 02",
-    helper: "Format umum: MP4. Jika perlu, siapkan juga poster frame terpisah.",
+    // Format umum: MP4. Jika perlu, siapkan juga poster frame terpisah.
   },
 ];
 

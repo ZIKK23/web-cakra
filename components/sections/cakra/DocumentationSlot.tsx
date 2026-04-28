@@ -36,7 +36,7 @@ export function DocumentationSlot({ item }: DocumentationSlotProps) {
 
       <h3 className="mt-5 font-serif text-2xl text-[#f4ebd0]">{item.title}</h3>
       <p className="mt-2 text-sm leading-7 text-[#d6c8ad]">{item.description}</p>
-
+      {/*
       <div className="mt-4 rounded-[20px] bg-black/20 px-4 py-3">
         <p className="text-[11px] uppercase tracking-[0.18em] text-[#c5a059]">
           Simpan file di
@@ -45,8 +45,7 @@ export function DocumentationSlot({ item }: DocumentationSlotProps) {
           public{item.url}
         </code>
       </div>
-
-      <p className="mt-3 text-sm leading-6 text-[#b9aa8c]">{item.helper}</p>
+      */}
     </article>
   );
 }
