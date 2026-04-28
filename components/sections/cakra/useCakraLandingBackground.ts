@@ -17,14 +17,14 @@ import { FRAME_SOURCES, TOTAL_FRAMES } from "./constants";
  * - < 1.0 = smaller
  * - > 1.0 = larger
  */
-const SCALE_MULTIPLIER = 0.95;
+const SCALE_MULTIPLIER = 1.0;
 
 /**
  * How frames fit the viewport.
  * - "contain": never crops (may add margins)
  * - "cover": fills viewport (may crop)
  */
-const FIT_MODE: "contain" | "cover" = "contain";
+const FIT_MODE: "contain" | "cover" = "cover";
 
 /** Cached max scroll distance for frame mapping. */
 type ScrollMetrics = {
@@ -32,16 +32,7 @@ type ScrollMetrics = {
 };
 
 function getResponsiveScaleMultiplier(viewportWidth: number) {
-  if (viewportWidth >= 1280) {
-    return SCALE_MULTIPLIER;
-  }
-  if (viewportWidth >= 1024) {
-    return SCALE_MULTIPLIER * 0.94;
-  }
-  if (viewportWidth >= 768) {
-    return SCALE_MULTIPLIER * 0.88;
-  }
-  return SCALE_MULTIPLIER * 0.8;
+  return SCALE_MULTIPLIER;
 }
 
 function getViewportSize(canvas: HTMLCanvasElement) {

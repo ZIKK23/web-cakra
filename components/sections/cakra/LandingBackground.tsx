@@ -38,6 +38,7 @@ export function LandingBackground({
               aria-hidden
               className="object-cover object-center opacity-60"
               priority
+              quality={100}
             />
           </div>
         )}
