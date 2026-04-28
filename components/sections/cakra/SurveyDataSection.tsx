@@ -20,7 +20,7 @@ export function SurveyDataSection() {
         <SectionHeading
           eyebrow="Data & Survey"
           title="Bagian data diringkas menjadi tiga kartu agar mudah dipahami dalam sekali lihat."
-          description="Visualisasi ini tetap menjelaskan dampak awal program tanpa membuat halaman terasa terlalu padat."
+          description="Visualisasi ini tetap menjelaskan proyeksi dampak program terhadap pemahaman etika AI siswa."
         />
 
         <div className="grid gap-4 lg:grid-cols-3">
