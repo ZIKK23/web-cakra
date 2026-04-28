@@ -17,9 +17,9 @@ export function AboutSection() {
     >
       <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
         <SectionHeading
-          eyebrow="About Cakra"
-          title="Isi halaman dibuat lebih ringan agar pengunjung cepat memahami inti program."
-          description="Cakra adalah landing page literasi digital untuk siswa SMP yang menghubungkan nilai Pancasila, pembelajaran AI, dan dokumentasi proyek sosial mahasiswa Telkom University."
+          eyebrow="Tentang CAKRA"
+          title="Navigasi Etis di Era AI, Berlandaskan Karakter Bangsa."
+          description="CAKRA adalah ekosistem edukasi bagi siswa SMA untuk menguasai Generative AI secara produktif dan berintegritas melalui filter etika nilai-nilai Pancasila."
         />
 
         <div className="space-y-4">

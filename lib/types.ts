@@ -12,7 +12,7 @@ export interface Module {
 
 export interface TimelineItem {
   id: string;
-  phase: "riset" | "sosialisasi" | "monitoring" | "evaluasi";
+  phase: "Minggu 1-4" | "Minggu 5-8" | "Minggu 9-12";
   title: string;
   description: string;
   date: string;

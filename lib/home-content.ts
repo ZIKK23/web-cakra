@@ -36,17 +36,14 @@ export type ModuleDocument = {
 };
 
 export const SITE_COPY = {
-  brand: "CAKRA",
-  fullName: "Cerdas AI Karakter Pancasila",
-  heroBadge: "Modern Heritage x Generative AI",
-  heroTitle: "Literasi AI yang etis, dekat dengan siswa, dan berpijak pada nilai Pancasila.",
-  heroDescription:
-    "Cakra menghadirkan modul belajar, pendampingan berkala, dan ruang eksplorasi prompt sederhana untuk membantu siswa SMP memanfaatkan AI secara bertanggung jawab.",
-  heroPrimaryCta: "Lihat Modul",
-  heroSecondaryCta: "Lihat Dokumentasi",
-  footerNote:
-    "Program sosial mahasiswa Telkom University untuk memperluas literasi digital yang aman, kritis, dan relevan di sekolah.",
-};
+  "brand": "CAKRA",
+  "fullName": "Cipta Aksi Kreatif dan Riset Siswa",
+  "heroTitle": "Membuka Pintu Pengetahuan: Sinergi Teknologi & Karakter",
+  "heroDescription": "Ekosistem edukasi yang membekali siswa SMA dengan kemampuan praktis menggunakan Generative AI sebagai asisten akademik yang berintegritas dan berpijak pada nilai-nilai Pancasila.",
+  "heroPrimaryCta": "Unduh E-Book",
+  "heroSecondaryCta": "Gabung Komunitas",
+  "footerNote": "Proyek Sosial Mata Kuliah Pendidikan Pancasila - Program Studi Sistem Informasi Telkom University 2026."
+}
 
 export const NAV_ITEMS = [
   { id: "hero", label: "Beranda" },
@@ -59,30 +56,27 @@ export const NAV_ITEMS = [
 ] as const;
 
 export const PRODUCT_GOALS = [
-  "Menyediakan platform literasi digital bagi siswa SMP agar mampu menggunakan AI secara etis sesuai nilai Pancasila.",
-  "Menjadi repositori modul pembelajaran berbasis AI yang dapat diunduh dalam format PDF langsung dari website.",
-  "Mendokumentasikan perjalanan proyek sosial mahasiswa Telkom University dari riset hingga evaluasi dampak.",
+  "Mengedukasi siswa SMA mengenai penggunaan Generative AI yang etis dan produktif berlandaskan nilai Pancasila.",
+  "Menyediakan akses modul edukasi gratis melalui E-Book Panduan CAKRA dan Landing Page yang responsif.",
+  "Membangun komunitas mentorship CAKRA Care untuk pendampingan belajar dan diskusi etika digital bagi siswa."
 ];
 
 export const TEAM_PILLARS: TeamPillar[] = [
   {
-    title: "Kurikulum yang membumi",
-    label: "Visi",
-    description:
-      "Materi dirancang sederhana, kontekstual, dan cocok untuk ritme belajar siswa SMP di kelas maupun kegiatan pendampingan.",
+    "title": "Sinergi Teknologi & Karakter",
+    "label": "Visi",
+    "description": "Menciptakan pelajar yang melek AI dengan menjadikan Pancasila sebagai kompas moral dan filter etika digital`."
   },
   {
-    title: "Pendampingan bertahap",
-    label: "Mentoring",
-    description:
-      "Setiap tahap program menekankan praktik aman: memahami prompt, memeriksa hasil AI, lalu mengaitkannya dengan karakter Pancasila.",
+    "title": "Framework CAKRA Compass",
+    "label": "Mentoring",
+    "description": "Pendampingan praktis berbasis prinsip C-A-K-R-A untuk memastikan penggunaan AI yang jujur, kritis, dan bertanggung jawab."
   },
   {
-    title: "Dokumentasi sebagai bukti dampak",
-    label: "Project Social",
-    description:
-      "Website ini bukan hanya etalase, tetapi arsip proses, refleksi, dan capaian proyek sosial mahasiswa Telkom University.",
-  },
+    "title": "Ekosistem Berkelanjutan",
+    "label": "Project Social",
+    "description": "Menjamin dampak jangka panjang melalui modul gratis dan komunitas belajar bagi siswa SMA di Indonesia."
+  }
 ];
 
 export const IMPACT_STATS: Statistic[] = [
@@ -102,32 +96,29 @@ export const IMPACT_STATS: Statistic[] = [
 
 export const TIMELINE_ITEMS: TimelineItem[] = [
   {
-    id: "riset",
-    phase: "riset",
-    title: "Tahap Riset",
-    description:
-      "Tim memetakan kebutuhan siswa, kebiasaan penggunaan AI, serta isu etika digital yang paling dekat dengan aktivitas belajar sehari-hari.",
-    date: "Maret 2026",
-    status: "completed",
+    "id": "persiapan",
+    "phase": "Minggu 1-4",
+    "title": "Persiapan & Pengembangan",
+    "description": "Riset literasi digital, penyusunan modul workshop, serta pengembangan Landing Page dan draft E-Book CAKRA.",
+    "date": "Mei 2026",
+    "status": "completed"
   },
   {
-    id: "sosialisasi",
-    phase: "sosialisasi",
-    title: "Tahap Sosialisasi",
-    description:
-      "Siswa diperkenalkan pada konsep AI generatif, cara menyusun prompt, dan contoh penggunaan yang jujur, aman, dan menghargai proses belajar.",
-    date: "April 2026",
-    status: "ongoing",
+    "id": "pelaksanaan",
+    "phase": "Minggu 5-8",
+    "title": "Workshop & Aktivasi",
+    "description": "Pelaksanaan Workshop CAKRA Lab untuk siswa SMA dan aktivasi komunitas mentorship CAKRA Care.",
+    "date": "Juni 2026",
+    "status": "ongoing"
   },
   {
-    id: "monitoring",
-    phase: "monitoring",
-    title: "Tahap Monitoring",
-    description:
-      "Pendampingan berkala dilakukan untuk meninjau pemahaman, mengukur dampak, dan menguatkan refleksi atas penggunaan AI sesuai nilai Pancasila.",
-    date: "Mei 2026",
-    status: "upcoming",
-  },
+    "id": "finalisasi",
+    "phase": "Minggu 9-12",
+    "title": "Evaluasi & Penyerahan",
+    "description": "Finalisasi seluruh aset edukasi, pengumpulan feedback, dan pelaporan dampak proyek secara komprehensif.",
+    "date": "Juli 2026",
+    "status": "upcoming"
+  }
 ];
 
 export const LEARNING_MODULES: LearningModuleCard[] = [
@@ -361,7 +352,7 @@ export const MODULE_DOCUMENTS: Record<string, ModuleDocument> = {
       },
     ],
     footer:
-      "CAKRA | Cerdas AI Karakter Pancasila | Telkom University Social Project",
+      "CAKRA | Cipta Aksi Kreatif dan Riset Siswa | Telkom University Social Project",
   },
   gambar: {
     filename: "cakra-modul-gambar.pdf",
@@ -395,7 +386,7 @@ export const MODULE_DOCUMENTS: Record<string, ModuleDocument> = {
       },
     ],
     footer:
-      "CAKRA | Cerdas AI Karakter Pancasila | Telkom University Social Project",
+      "CAKRA | Cipta Aksi Kreatif dan Riset Siswa | Telkom University Social Project",
   },
   ujian: {
     filename: "cakra-modul-latihan-ujian.pdf",
@@ -429,6 +420,6 @@ export const MODULE_DOCUMENTS: Record<string, ModuleDocument> = {
       },
     ],
     footer:
-      "CAKRA | Cerdas AI Karakter Pancasila | Telkom University Social Project",
+      "CAKRA | Cipta Aksi Kreatif dan Riset Siswa | Telkom University Social Project",
   },
 };

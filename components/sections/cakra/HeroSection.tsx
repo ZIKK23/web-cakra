@@ -18,9 +18,6 @@ export function HeroSection({ contentY }: HeroSectionProps) {
     >
       <div className="relative mx-auto flex w-full max-w-6xl items-center px-4 pb-16 pt-28 sm:px-6 lg:px-8">
         <motion.div style={{ y: contentY }} className="max-w-3xl">
-          <span className="chip inline-flex rounded-full px-4 py-1 text-[11px] uppercase tracking-[0.26em] text-[#c5a059]">
-            {SITE_COPY.heroBadge}
-          </span>
           <h1
             className="mt-6 font-serif text-4xl leading-tight text-balance sm:text-5xl lg:text-6xl"
             style={{
