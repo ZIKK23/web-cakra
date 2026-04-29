@@ -1,14 +1,13 @@
 /**
  * Shared domain types used by content and UI sections.
  */
-export interface Module {
+export type Module = {
   id: string;
   title: string;
   description: string;
-  category: "tugas" | "gambar" | "ujian";
-  thumbnail: string;
-  pdfUrl: string;
-}
+  category: string;
+  pdfUrl?: string;
+};
 
 export interface TimelineItem {
   id: string;

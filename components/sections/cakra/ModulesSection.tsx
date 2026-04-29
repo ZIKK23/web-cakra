@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, Download } from "lucide-react";
+import { CheckCircle2, Download, Clock } from "lucide-react";
 
 import { LEARNING_MODULES } from "@/lib/home-content";
 import { cn } from "@/lib/utils";
@@ -32,7 +32,6 @@ export function ModulesSection() {
               <div
                 className={cn(
                   "absolute inset-0 bg-gradient-to-br",
-                  moduleAccentClasses[module.accent],
                 )}
               />
               <div className="relative z-10">
@@ -61,14 +60,22 @@ export function ModulesSection() {
                   ))}
                 </ul>
 
-                <a
-                  href={module.pdfUrl}
-                  download
-                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#c5a059] px-4 py-3 text-sm font-semibold text-[#111111] transition hover:bg-[#d6b26f]"
-                >
-                  Download PDF
-                  <Download className="h-4 w-4" />
-                </a>
+                {module.pdfUrl ? (
+                  <a
+                    href={module.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#c5a059] px-4 py-3 text-sm font-semibold text-[#111111] transition hover:bg-[#d6b26f]"
+                  >
+                    Buka PDF
+                    <Download className="h-4 w-4" />
+                  </a>
+                ) : (
+                  <span className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-3 text-sm font-semibold text-white/40 cursor-not-allowed border border-white/10">
+                    Segera Hadir
+                    <Clock className="h-4 w-4" />
+                  </span>
+                )}
               </div>
             </article>
           ))}

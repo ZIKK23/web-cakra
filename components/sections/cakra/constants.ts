@@ -1,7 +1,7 @@
 export const TOTAL_FRAMES = 144;
 
 export const FRAME_SOURCES = Array.from({ length: TOTAL_FRAMES }, (_, index) => {
-  return `/assets/logo-sequence/ezgif-frame-${String(index).padStart(
+  return `/assets/logo-sequence/ezgif-frame-${String(index + 1).padStart(
     3,
     "0",
   )}.webp`;

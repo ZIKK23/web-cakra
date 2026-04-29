@@ -17,7 +17,7 @@ import { FRAME_SOURCES, TOTAL_FRAMES } from "./constants";
  * - < 1.0 = smaller
  * - > 1.0 = larger
  */
-const SCALE_MULTIPLIER = 1.0;
+const SCALE_MULTIPLIER = 0.85;
 
 /**
  * How frames fit the viewport.
