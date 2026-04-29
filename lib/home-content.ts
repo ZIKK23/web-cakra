@@ -242,4 +242,83 @@ export const SURVEY_DATA: SurveyData[] = [
   },
 ];
 
-export const DOCUMENTATION_ITEMS: DocumentationCard[] = []
+export const DOCUMENTATION_ITEMS: DocumentationCard[] = [
+  {
+    id: "doc-photo-1",
+    type: "image",
+    url: "/documentation/foto-kegiatan-01.jpg",
+    title: "Foto pembukaan kegiatan",
+    description:
+      "Gunakan untuk momen pembukaan, briefing, atau penyampaian tujuan program di kelas.",
+    date: "Slot Foto",
+    event: "Dokumentasi",
+    accent: "navy",
+    slot: "Foto 01",
+    // Rasio aman: 4:5 atau 16:10. Cocok untuk foto suasana kelas.
+  },
+  {
+    id: "doc-photo-2",
+    type: "image",
+    url: "/documentation/foto-kegiatan-02.jpg",
+    title: "Foto sesi sosialisasi",
+    description:
+      "Tempatkan foto guru, mentor, atau siswa saat materi literasi AI sedang disampaikan.",
+    date: "Slot Foto",
+    event: "Dokumentasi",
+    accent: "gold",
+    slot: "Foto 02",
+    // Pilih foto terang dengan fokus jelas pada aktivitas utama.
+  },
+  {
+    id: "doc-photo-3",
+    type: "image",
+    url: "/documentation/foto-kegiatan-03.jpg",
+    title: "Foto diskusi kelompok",
+    description:
+      "Gunakan untuk foto interaksi siswa saat bertanya, berdiskusi, atau mencoba prompt bersama mentor.",
+    date: "Slot Foto",
+    event: "Dokumentasi",
+    accent: "cream",
+    slot: "Foto 03",
+    // Cocok untuk momen yang menunjukkan kolaborasi dan partisipasi siswa.
+  },
+  {
+    id: "doc-photo-4",
+    type: "image",
+    url: "/documentation/foto-kegiatan-04.jpg",
+    title: "Foto penutupan atau refleksi",
+    description:
+      "Isi dengan foto sesi refleksi, penyerahan materi, atau dokumentasi akhir kegiatan.",
+    date: "Slot Foto",
+    event: "Dokumentasi",
+    accent: "navy",
+    slot: "Foto 04",
+    // Gunakan foto horizontal jika ingin menampilkan lebih banyak peserta.
+  },
+  {
+    id: "doc-video-1",
+    type: "video",
+    url: "/documentation/video-kegiatan-01.mp4",
+    title: "Video sesi pembelajaran",
+    description:
+      "Sediakan untuk cuplikan mentor menjelaskan materi atau siswa saat praktik memakai prompt sandbox.",
+    date: "Slot Video",
+    event: "Dokumentasi",
+    accent: "cream",
+    slot: "Video 01",
+    // Simpan video utama kegiatan atau thumbnail pendukung di path ini.
+  },
+  {
+    id: "doc-video-2",
+    type: "video",
+    url: "/documentation/video-kegiatan-02.mp4",
+    title: "Video rekap kegiatan",
+    description:
+      "Gunakan untuk video penutup, ringkasan kegiatan, atau kompilasi dokumentasi pendek.",
+    date: "Slot Video",
+    event: "Dokumentasi",
+    accent: "gold",
+    slot: "Video 02",
+    // Format umum: MP4. Jika perlu, siapkan juga poster frame terpisah.
+  },
+];

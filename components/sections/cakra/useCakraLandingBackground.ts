@@ -32,6 +32,11 @@ type ScrollMetrics = {
 };
 
 function getResponsiveScaleMultiplier(viewportWidth: number) {
+  // Jika di HP (layar kecil < 768px), perkecil ukurannya lebih jauh (misal 0.5 atau 50% dari normal)
+  if (viewportWidth < 768) {
+    return SCALE_MULTIPLIER * 0.45;
+  }
+  // Jika di Tablet/Desktop, gunakan ukuran normal
   return SCALE_MULTIPLIER;
 }
 

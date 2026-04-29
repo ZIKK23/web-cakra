@@ -36,41 +36,41 @@ export function ChampionSection() {
         />
 
         {/* Podium Top 3 */}
-        <div className="flex flex-col sm:flex-row items-end justify-center gap-4 sm:gap-6 pt-10">
+        <div className="flex flex-row items-end justify-center gap-1.5 sm:gap-6 pt-10">
           {/* Juara 2 */}
-          <div className="flex flex-col items-center order-2 sm:order-1">
-            <div className="relative mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-white/10 overflow-hidden border-2 border-[#b9aa8c]">
-              <User className="h-10 w-10 text-white/50" />
+          <div className="flex flex-col items-center order-1">
+            <div className="relative mb-2 sm:mb-4 flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-white/10 overflow-hidden border-2 border-[#b9aa8c]">
+              <User className="h-7 w-7 sm:h-10 sm:w-10 text-white/50" />
             </div>
-            <div className="flex w-32 flex-col items-center rounded-t-lg bg-gradient-to-t from-[rgba(244,235,208,0.2)] to-transparent p-4 pb-0 text-center sm:h-32">
-              <span className="text-[#b9aa8c] font-serif text-3xl">2</span>
-              <p className="mt-2 text-sm font-semibold text-[#f4ebd0]">{top3[1].name}</p>
-              <p className="text-xs text-[#d6c8ad]">{top3[1].score} pts</p>
+            <div className="flex w-20 sm:w-32 flex-col items-center rounded-t-lg bg-gradient-to-t from-[rgba(244,235,208,0.2)] to-transparent p-1.5 sm:p-4 pb-0 text-center h-20 sm:h-32">
+              <span className="text-[#b9aa8c] font-serif text-xl sm:text-3xl">2</span>
+              <p className="mt-1 sm:mt-2 text-[9px] sm:text-sm font-semibold text-[#f4ebd0] line-clamp-1">{top3[1].name}</p>
+              <p className="text-[8px] sm:text-xs text-[#d6c8ad]">{top3[1].score} pts</p>
             </div>
           </div>
 
           {/* Juara 1 */}
-          <div className="flex flex-col items-center order-1 sm:order-2">
-            <Trophy className="mb-2 h-8 w-8 text-[#c5a059]" />
-            <div className="relative mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-white/10 overflow-hidden border-4 border-[#c5a059]">
-              <User className="h-12 w-12 text-white/50" />
+          <div className="flex flex-col items-center order-2">
+            <Trophy className="mb-1 sm:mb-2 h-5 w-5 sm:h-8 sm:w-8 text-[#c5a059]" />
+            <div className="relative mb-2 sm:mb-4 flex h-16 w-16 sm:h-24 sm:w-24 items-center justify-center rounded-full bg-white/10 overflow-hidden border-4 border-[#c5a059]">
+              <User className="h-8 w-8 sm:h-12 sm:w-12 text-white/50" />
             </div>
-            <div className="flex w-36 flex-col items-center rounded-t-lg bg-gradient-to-t from-[rgba(197,160,89,0.3)] to-transparent p-4 pb-0 text-center sm:h-40">
-              <span className="text-[#c5a059] font-serif text-4xl">1</span>
-              <p className="mt-2 text-sm font-bold text-[#f4ebd0]">{top3[0].name}</p>
-              <p className="text-xs text-[#d6c8ad]">{top3[0].score} pts</p>
+            <div className="flex w-24 sm:w-36 flex-col items-center rounded-t-lg bg-gradient-to-t from-[rgba(197,160,89,0.3)] to-transparent p-1.5 sm:p-4 pb-0 text-center h-28 sm:h-40">
+              <span className="text-[#c5a059] font-serif text-2xl sm:text-4xl">1</span>
+              <p className="mt-1 sm:mt-2 text-[10px] sm:text-sm font-bold text-[#f4ebd0] line-clamp-1">{top3[0].name}</p>
+              <p className="text-[8px] sm:text-xs text-[#d6c8ad]">{top3[0].score} pts</p>
             </div>
           </div>
 
           {/* Juara 3 */}
-          <div className="flex flex-col items-center order-3 sm:order-3">
-            <div className="relative mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-white/10 overflow-hidden border-2 border-[#8c7453]">
-              <User className="h-10 w-10 text-white/50" />
+          <div className="flex flex-col items-center order-3">
+            <div className="relative mb-2 sm:mb-4 flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-white/10 overflow-hidden border-2 border-[#8c7453]">
+              <User className="h-7 w-7 sm:h-10 sm:w-10 text-white/50" />
             </div>
-            <div className="flex w-32 flex-col items-center rounded-t-lg bg-gradient-to-t from-[rgba(140,116,83,0.2)] to-transparent p-4 pb-0 text-center sm:h-24">
-              <span className="text-[#8c7453] font-serif text-2xl">3</span>
-              <p className="mt-2 text-sm font-semibold text-[#f4ebd0]">{top3[2].name}</p>
-              <p className="text-xs text-[#d6c8ad]">{top3[2].score} pts</p>
+            <div className="flex w-20 sm:w-32 flex-col items-center rounded-t-lg bg-gradient-to-t from-[rgba(140,116,83,0.2)] to-transparent p-1.5 sm:p-4 pb-0 text-center h-16 sm:h-24">
+              <span className="text-[#8c7453] font-serif text-lg sm:text-2xl">3</span>
+              <p className="mt-1 sm:mt-2 text-[9px] sm:text-sm font-semibold text-[#f4ebd0] line-clamp-1">{top3[2].name}</p>
+              <p className="text-[8px] sm:text-xs text-[#d6c8ad]">{top3[2].score} pts</p>
             </div>
           </div>
         </div>
