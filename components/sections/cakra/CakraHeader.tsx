@@ -42,10 +42,10 @@ export function CakraHeader() {
         </nav>
 
         <a
-          href="#modules"
+          href="#playground"
           className="inline-flex shrink-0 items-center gap-1 rounded-full bg-[#c5a059] px-3 py-2 text-xs font-semibold text-[#0f0f0f] transition hover:bg-[#d6b26f] sm:gap-2 sm:px-4 sm:text-sm"
         >
-          Modul
+          Playground
           <ArrowRight className="hidden h-4 w-4 sm:block" />
         </a>
       </div>

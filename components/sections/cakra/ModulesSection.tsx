@@ -64,7 +64,7 @@ export function ModulesSection() {
                 <a
                   href={module.pdfUrl}
                   download
-                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#f4ebd0] px-4 py-3 text-sm font-semibold text-[#111111] transition hover:bg-white"
+                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#c5a059] px-4 py-3 text-sm font-semibold text-[#111111] transition hover:bg-[#d6b26f]"
                 >
                   Download PDF
                   <Download className="h-4 w-4" />

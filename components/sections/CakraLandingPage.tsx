@@ -11,6 +11,7 @@ import {
   PlaygroundSection,
   SurveyDataSection,
   TimelineSection,
+  ChampionSection,
   useCakraLandingBackground,
 } from "./cakra";
 
@@ -35,6 +36,7 @@ export default function CakraLandingPage() {
         <TimelineSection />
         <ModulesSection />
         <PlaygroundSection />
+        <ChampionSection />
         <SurveyDataSection />
         <DocumentationSection />
       </main>

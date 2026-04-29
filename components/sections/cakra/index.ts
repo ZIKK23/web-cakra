@@ -9,3 +9,4 @@ export { PlaygroundSection } from "./PlaygroundSection";
 export { SurveyDataSection } from "./SurveyDataSection";
 export { TimelineSection } from "./TimelineSection";
 export { useCakraLandingBackground } from "./useCakraLandingBackground";
+export { ChampionSection } from "./ChampionSection";

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import type { MotionValue } from "framer-motion";
-import { Download } from "lucide-react";
+import { WandSparkles } from "lucide-react";
 
 import { IMPACT_STATS, SITE_COPY } from "@/lib/home-content";
 
@@ -36,14 +36,16 @@ export function HeroSection({ contentY }: HeroSectionProps) {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="#modules"
+              href="#playground"
               className="inline-flex items-center gap-2 rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#0f0f0f] transition hover:bg-[#d6b26f]"
             >
               {SITE_COPY.heroPrimaryCta}
-              <Download className="h-4 w-4" />
+              <WandSparkles className="h-4 w-4" />
             </a>
             <a
-              href="#documentation"
+              href="https://chat.whatsapp.com/DTUpvnV5XdKA8jRaeFoAns"
+              target="_blank"
+              rel="noopener noreferrer"
               className="chip inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold text-[#f4ebd0] transition hover:bg-white/8"
             >
               {SITE_COPY.heroSecondaryCta}

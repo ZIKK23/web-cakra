@@ -33,12 +33,6 @@ export function PlaygroundSection() {
     });
   };
 
-  const handlePromptSimulation = () => {
-    startTransition(() => {
-      setSandboxResult(simulatePrompt(promptInput));
-    });
-  };
-
   return (
     <motion.section
       id="playground"
@@ -92,14 +86,15 @@ export function PlaygroundSection() {
             />
 
             <div className="mt-4 flex flex-wrap items-center gap-3">
-              <button
-                type="button"
-                onClick={handlePromptSimulation}
+              <a
+                href="https://gemini.google.com/app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#101010] transition hover:bg-[#d6b26f]"
               >
                 <WandSparkles className="h-4 w-4" />
                 Simulasikan
-              </button>
+              </a>
               <p className="text-xs uppercase tracking-[0.18em] text-[#b9aa8c]">
                 {promptInput.trim().length} karakter
               </p>

@@ -40,7 +40,7 @@ export const SITE_COPY = {
   "fullName": "Cipta Aksi Kreatif dan Riset Siswa",
   "heroTitle": "Membuka Pintu Pengetahuan: Sinergi Teknologi & Karakter",
   "heroDescription": "Ekosistem edukasi yang membekali siswa SMA dengan kemampuan praktis menggunakan Generative AI sebagai asisten akademik yang berintegritas dan berpijak pada nilai-nilai Pancasila.",
-  "heroPrimaryCta": "Unduh E-Book",
+  "heroPrimaryCta": "Playground",
   "heroSecondaryCta": "Gabung Komunitas",
   "footerNote": "Proyek Sosial Mata Kuliah Pendidikan Pancasila - Program Studi Sistem Informasi Telkom University 2026."
 }
@@ -50,7 +50,7 @@ export const NAV_ITEMS = [
   { id: "about", label: "Tentang" },
   { id: "timeline", label: "Kegiatan" },
   { id: "modules", label: "Modul" },
-  { id: "playground", label: "Playground" },
+  { id: "champion", label: "Leaderboard" },
   { id: "data", label: "Data" },
   { id: "documentation", label: "Dokumentasi" },
 ] as const;
@@ -81,7 +81,7 @@ export const TEAM_PILLARS: TeamPillar[] = [
 
 export const IMPACT_STATS: Statistic[] = [
   {
-    value: "3",
+    value: "6 Modul",
     label: "modul inti siap diunduh untuk tugas, gambar, dan ujian",
   },
   {
@@ -99,7 +99,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     "id": "persiapan",
     "phase": "Minggu 1-4",
     "title": "Persiapan & Pengembangan",
-    "description": "Riset literasi digital, penyusunan modul workshop, serta pengembangan Landing Page dan draft E-Book CAKRA.",
+    "description": "Riset literasi digital, penyusunan modul workshop, pengembangan Landing Page dan draft E-Book CAKRA.",
     "date": "Mei 2026",
     "status": "completed"
   },
@@ -123,52 +123,70 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
 
 export const LEARNING_MODULES: LearningModuleCard[] = [
   {
-    id: "tugas",
-    title: "Modul Tugas Cerdas",
-    description:
-      "Panduan memakai AI untuk membantu memahami materi, menyusun ide, dan mengecek hasil tugas tanpa menyalin jawaban mentah.",
-    category: "tugas",
+    id: "starter-pack",
+    title: "#1 The AI Starter Pack",
+    description: "Pengenalan dasar AI dan cara kerjanya sebagai asisten belajar sehari-hari.",
+    category: "dasar",
     thumbnail: "/images/LOGO-CAKRA.png",
-    pdfUrl: "/api/modules/tugas",
+    pdfUrl: "/assets/pdf/modul1.pdf",
     accent: "gold",
-    duration: "15-20 menit",
-    highlights: [
-      "Membedakan bantuan belajar dan kecurangan akademik.",
-      "Template prompt untuk meringkas, menjelaskan, dan memberi umpan balik.",
-      "Checklist verifikasi sebelum jawaban dipakai kembali.",
-    ],
+    duration: "15 menit",
+    highlights: ["Konsep dasar AI", "Mengenal berbagai tools AI", "Etika dasar penggunaan AI"],
   },
   {
-    id: "gambar",
-    title: "Modul Visual & Gambar",
-    description:
-      "Pendekatan aman untuk membuat ilustrasi pembelajaran, poster kelas, dan visual kreatif dengan instruksi yang jelas dan bertanggung jawab.",
-    category: "gambar",
+    id: "gemini",
+    title: "#2 Gemini: Teman Belajarmu",
+    description: "Cara efektif menggunakan Gemini untuk berdiskusi, bertanya, dan mencari penjelasan materi.",
+    category: "belajar",
     thumbnail: "/images/LOGO-CAKRA.png",
-    pdfUrl: "/api/modules/gambar",
+    pdfUrl: "/assets/pdf/modul2.pdf",
     accent: "navy",
     duration: "20 menit",
-    highlights: [
-      "Cara menjelaskan objek, warna, dan suasana secara spesifik.",
-      "Etika memakai gambar AI di lingkungan sekolah.",
-      "Contoh prompt visual untuk poster literasi digital.",
-    ],
+    highlights: ["Fitur-fitur Gemini", "Teknik bertanya yang efektif", "Memilah informasi dari Gemini"],
   },
   {
-    id: "ujian",
-    title: "Modul Latihan Ujian",
-    description:
-      "Strategi menggunakan AI untuk latihan mandiri, membuat soal refleksi, dan memahami kesalahan tanpa bergantung penuh pada jawaban instan.",
-    category: "ujian",
+    id: "notebooklm",
+    title: "#3 NotebookLM: Riset Jadi Mudah",
+    description: "Mengelola sumber belajar, buku, dan jurnal menggunakan NotebookLM untuk riset yang terstruktur.",
+    category: "riset",
     thumbnail: "/images/LOGO-CAKRA.png",
-    pdfUrl: "/api/modules/ujian",
+    pdfUrl: "/assets/pdf/modul3.pdf",
     accent: "cream",
-    duration: "15 menit",
-    highlights: [
-      "Latihan soal bertingkat dari mudah ke menengah.",
-      "Simulasi tanya jawab yang mendorong siswa tetap berpikir aktif.",
-      "Panduan evaluasi diri setelah menerima bantuan AI.",
-    ],
+    duration: "25 menit",
+    highlights: ["Upload dokumen sumber", "Membuat ringkasan otomatis", "Tanya jawab berbasis dokumen"],
+  },
+  {
+    id: "prompting",
+    title: "#4 Seni Prompting",
+    description: "Panduan menyusun instruksi yang spesifik, jelas, dan mendapatkan hasil yang akurat.",
+    category: "teknik",
+    thumbnail: "/images/LOGO-CAKRA.png",
+    pdfUrl: "/assets/pdf/modul4.pdf",
+    accent: "gold",
+    duration: "20 menit",
+    highlights: ["Struktur prompt yang baik", "Menghindari bias", "Iterasi prompt"],
+  },
+  {
+    id: "visualizing",
+    title: "#5 Visualizing Ideas",
+    description: "Menggunakan AI untuk membuat ilustrasi, poster, dan memvisualisasikan ide presentasi.",
+    category: "visual",
+    thumbnail: "/images/LOGO-CAKRA.png",
+    pdfUrl: "/assets/pdf/modul5.pdf",
+    accent: "navy",
+    duration: "20 menit",
+    highlights: ["Prompt untuk gambar", "Gaya visual dan warna", "Etika gambar AI"],
+  },
+  {
+    id: "final-project",
+    title: "#6 Final Project & Etika AI",
+    description: "Menerapkan semua ilmu untuk proyek akhir dan memahami dampak etis dari AI.",
+    category: "etika",
+    thumbnail: "/images/LOGO-CAKRA.png",
+    pdfUrl: "/assets/pdf/modul6.pdf",
+    accent: "cream",
+    duration: "30 menit",
+    highlights: ["Panduan Final Project", "Ceklis integritas", "Masa depan AI dan Pancasila"],
   },
 ];
 
@@ -178,7 +196,7 @@ export const GOLDEN_PROMPTS: GoldenPrompt[] = [
     title: "Ringkas Materi",
     category: "Belajar",
     prompt:
-      "Bantu aku merangkum materi Pancasila kelas SMP menjadi 5 poin singkat, gunakan bahasa mudah dipahami, dan beri 1 contoh penerapan di sekolah.",
+      "Bantu aku merangkum materi Pancasila kelas SMP menjadi 5 poin singkat, gunakan bahasa mudah dipahami, dan beri 1 contoh penerapan di sekolah. [Instruksi: Lampirkan dokumen pendukung materi di sini]",
     example:
       "AI akan menampilkan ringkasan terstruktur lalu memberi contoh sikap gotong royong di kelas.",
     tags: ["jelas", "ringkas", "relevan"],
@@ -188,7 +206,7 @@ export const GOLDEN_PROMPTS: GoldenPrompt[] = [
     title: "Ide Poster",
     category: "Kreatif",
     prompt:
-      "Buatkan prompt gambar untuk poster literasi digital bertema jujur saat memakai AI, warna hangat, gaya ramah siswa SMP, dan ada simbol gotong royong.",
+      "Buatkan prompt gambar untuk poster literasi digital bertema jujur saat memakai AI, warna hangat, gaya ramah siswa SMP, dan ada simbol gotong royong. [Instruksi: Lampirkan dokumen referensi visual di sini]",
     example:
       "AI akan membantu menyusun instruksi visual yang lebih rinci untuk dipakai di alat pembuat gambar.",
     tags: ["visual", "aman", "Pancasila"],
@@ -198,7 +216,7 @@ export const GOLDEN_PROMPTS: GoldenPrompt[] = [
     title: "Latihan Ujian",
     category: "Evaluasi",
     prompt:
-      "Berikan 3 soal latihan tentang etika digital untuk siswa SMP, lengkap dengan petunjuk berpikir, tetapi jangan langsung beri jawaban akhir sebelum aku mencoba.",
+      "Berikan 3 soal latihan tentang etika digital untuk siswa SMP, lengkap dengan petunjuk berpikir, tetapi jangan langsung beri jawaban akhir sebelum aku mencoba. [Instruksi: Lampirkan dokumen kisi-kisi atau soal sebelumnya di sini]",
     example:
       "AI akan bertindak seperti mentor yang menuntun, bukan pengganti proses belajar.",
     tags: ["latihan", "bertahap", "jujur"],

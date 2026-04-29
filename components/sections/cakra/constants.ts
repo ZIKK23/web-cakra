@@ -1,10 +1,10 @@
-export const TOTAL_FRAMES = 80;
+export const TOTAL_FRAMES = 144;
 
 export const FRAME_SOURCES = Array.from({ length: TOTAL_FRAMES }, (_, index) => {
-  return `/assets/logo-sequence/Logo%20Cakra%20Muter_${String(index).padStart(
+  return `/assets/logo-sequence/ezgif-frame-${String(index).padStart(
     3,
     "0",
-  )}.jpg`;
+  )}.webp`;
 });
 
 export const sectionMotionProps = {
